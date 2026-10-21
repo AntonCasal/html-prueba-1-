@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        .div{
+             margin: 8px;
+            border: 1px solid black;
+        }
+        .child {
+            width: 100px;
+           
+        }
+        .container {
+            width: 218px;
+        }
+        .extra {   
+            height: 4096px;
+        }
+        .target1 {
+            position: fixed;
+            bottom: 0px;
+            right: 6px;
+        }
+        .target2 {
+            position: absolute;
+            top: -40px;
+            left: 56px;
+        }
+        </style>
+</head>
+<body>
+    <div class="extra"></div>
+    <div class="container">
+        <div class="child presibling" ></div>
+        <div class="child target" ></div>  
+        <div class="child postsibling" ></div>
+</html>
